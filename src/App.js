@@ -385,8 +385,14 @@ const setView = React.useCallback(async (event) => {
                     <option value="generalInformation"> General Information & Deposit </option>
                     <option value="CEO"> CEO Functions</option>
                     <option value="Board"> Board Member Functions </option>
-                </select>           
-                <button type={"submit"}>Select</button>
+                </select>        
+                
+//Button 3D
+                <button type={"submit"}>
+                      <span class="button_top"> Submit
+                      </span>
+                    
+                </button>
             </form>
 
             {view === "generalInformation"?<div className="main">
@@ -401,7 +407,10 @@ const setView = React.useCallback(async (event) => {
       <input id="scid" type="text"/>
       <p>Asset</p>
       <input id="asset" type="text"/>
-      <button type={"submit"}>Check Balance</button>
+      <button type={"submit"}> <button>
+  <span class="button_top"> Check Balance
+  </span>
+</button></button>
     </form>
     </div>
 
@@ -411,7 +420,10 @@ const setView = React.useCallback(async (event) => {
   <form onSubmit={checkVacancy}>
     <p>Your OAO Contract's SCID</p>
     <input id="scid" type="text" />
-    <button type={"submit"}>Check Vacancy</button>
+    <button type={"submit"}><button>
+  <span class="button_top"> Check Vacancy
+  </span>
+</button> </button>
   </form>
     
     </div>
@@ -425,7 +437,10 @@ const setView = React.useCallback(async (event) => {
     <input id="scid" type="text" />
     <p>Vote Index</p>
     <input id="index" type="text" />
-    <button type={"submit"}>Check Vote</button>
+    <button type={"submit"}> <button>
+  <span class="button_top"> Check Vote
+  </span>
+</button></button>
   </form>
   </div>
 
@@ -437,7 +452,10 @@ const setView = React.useCallback(async (event) => {
     <input id="scid" type="text" />
     <p>Asset</p>
     <input id="asset" type="text" />
-    <button type={"submit"}>Check Allowance</button>
+    <button type={"submit"}> <button>
+  <span class="button_top"> Check Allowance
+  </span>
+</button></button>
   </form>
   </div>
 
@@ -448,7 +466,10 @@ const setView = React.useCallback(async (event) => {
     <input id="scid" type="text"/>
     <p>Amount</p>
     <input id="amount" type="text"/>
-    <button type={"submit"}>Deposit</button>
+    <button type={"submit"}><button>
+  <span class="button_top"> Deposit
+  </span>
+</button></button>
   </form>
   </div>
 
@@ -479,7 +500,10 @@ const setView = React.useCallback(async (event) => {
     	<input id="m4" type="text" />
     	<p>Member 5 </p>
     	<input id="m5" type="text" />
-    	<button type={"submit"}>Appoint</button>
+    	<button type={"submit"}><button>
+  <span class="button_top"> Appoint
+  </span>
+</button></button>
     </form>
     </div>
 
@@ -492,7 +516,10 @@ const setView = React.useCallback(async (event) => {
       <input id="asset" type="text" />
       <p>Amount</p>
       <input id="amount" type="text" />
-      <button type={"submit"}>Withdraw</button>
+      <button type={"submit"}><button>
+  <span class="button_top"> Withdraw
+  </span>
+</button></button>
     </form>
   </div>
 
@@ -520,7 +547,15 @@ const setView = React.useCallback(async (event) => {
     	<input id="address" type="text" />
     	<p>Allowance Amount or Board Seat ID </p>
     	<input id="aos" type="text" />
-    	<button type={"submit"}>Open Vote</button>
+    
+    <button type={"submit"}><button>
+  <span class="button_top"> Open vote
+  </span>
+</button>
+    
+    </button>
+      
+      
     </form>
     </div>
 
@@ -537,7 +572,10 @@ const setView = React.useCallback(async (event) => {
         <option value="0"> no </option>
         <option value="1"> yes</option>
       </select>
-      <button type={"submit"}>Cast Vote</button>
+      <button type={"submit"}><button>
+  <span class="button_top"> Cast Vote
+  </span>
+</button></button>
     </form>
     </div>
 
@@ -548,7 +586,10 @@ const setView = React.useCallback(async (event) => {
       <input id="scid" type="text" />
       <p>Vote Index</p>
       <input id="voteIndex" type="text"/>
-      <button type={"submit"}>Close Vote</button>
+      <button type={"submit"}><button>
+  <span class="button_top"> Close Vote
+  </span>
+</button> </button>
     </form>
     
   </div>
@@ -569,7 +610,10 @@ const setView = React.useCallback(async (event) => {
     <p>Address</p>
     <input id="address" type="text" />
 
-    <button type={"submit"}>Transfer Seat</button>
+    <button type={"submit"}> <button>
+  <span class="button_top"> Transfer Seat
+  </span>
+</button></button>
   </form>
   </div>
 
